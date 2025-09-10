@@ -1,0 +1,192 @@
+/* ========== FONT ========== */
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Poppins:wght@400;600&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Background gradien default */
+.bg-main {
+  background: linear-gradient(135deg, #c91f67 0%, #641f9d 100%);
+}
+
+/* NAVBAR */
+.navbar-custom {
+  background-color: #fff;
+  color: #1f2937;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+.navbar-custom a {
+  transition: all 0.3s ease;
+}
+.navbar-custom a:hover {
+  color: #fda4af;
+}
+
+/* BUTTONS */
+.btn-primary {
+  background: #f43f5e;
+  color: #fff;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  text-align: center;
+  display: inline-block;
+}
+.btn-primary:hover {
+  background: #e11d48;
+  transform: scale(1.05);
+}
+
+.btn-outline {
+  background: #fff;
+  color: #f43f5e;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  text-align: center;
+  display: inline-block;
+}
+.btn-outline:hover {
+  transform: scale(1.05);
+}
+
+/* HERO */
+.hero-badge {
+  background: rgba(255,255,255,0.2);
+  padding: 4px 12px;
+  border-radius: 9999px;
+  font-size: 14px;
+}
+.hero-title span {
+  color: #fda4af;
+}
+
+/* CAROUSEL */
+.carousel-frame {
+  position: relative;
+  overflow: hidden;
+  border-radius: 1rem;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+  width: 100%;
+  max-width: 480px;
+  aspect-ratio: 16/9;
+}
+.carousel-track {
+  display: flex;
+  transition: transform 0.7s ease-in-out;
+  width: 300%;
+}
+.carousel-img {
+  flex-shrink: 0;
+  width: 100%;
+  object-fit: cover;
+  aspect-ratio: 16/9;
+}
+.carousel-dots {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 0.5rem;
+  z-index: 10;
+}
+.carousel-dot {
+  width: 12px;
+  height: 12px;
+  background: white;
+  border-radius: 50%;
+  opacity: 0.5;
+  transition: opacity 0.3s;
+}
+.carousel-dot.active {
+  opacity: 0.8;
+}
+
+/* TEMPLATE CARDS */
+.template-frame {
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.75rem;
+  border: 1px solid #e5e7eb;
+  background: #fff;
+  width: 100%;
+  max-width: 375px;
+  aspect-ratio: 9/16;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.template-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.template-frame:hover .template-overlay {
+  opacity: 1;
+}
+.btn-preview {
+  background: #fff;
+  color: #f43f5e;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  transition: transform 0.3s;
+}
+.btn-preview:hover {
+  transform: scale(1.05);
+}
+
+/* PRICING */
+.pricing-card {
+  background: rgba(255,255,255,0.2);
+  border-radius: 12px;
+  padding: 1.5rem;
+  transition: transform 0.3s ease, border 0.3s ease;
+}
+.pricing-card:hover {
+  transform: scale(1.05);
+}
+.pricing-popular {
+  border: 2px solid #f43f5e;
+}
+
+/* TESTIMONI */
+.testimoni-card {
+  background: rgba(255,255,255,0.2);
+  border-radius: 12px;
+  padding: 1.5rem;
+  transition: transform 0.3s ease;
+}
+.testimoni-card:hover {
+  transform: scale(1.05);
+}
+
+/* ANIMASI INTERAKTIF */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s forwards;
+}
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* CUSTOM STYLES */
+.custom-highlight {
+  color: #ffffff; /* bisa diganti sesuai kebutuhan */
+}

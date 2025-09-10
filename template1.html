@@ -1,0 +1,734 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ahmad ❤️ Salsabila</title>
+    <!-- Favicon -->
+    <link rel="icon" href="assets/img/favicon.png">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&family=Work+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat&display=swap" rel="stylesheet">
+
+
+    <!-- Aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- //lightbox2// -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.5/css/lightbox.min.css" integrity="sha512-xtV3HfYNbQXS/1R1jP53KbFcU9WXiSA1RFKzl5hRlJgdOJm4OxHCWYpskm6lN0xp0XtKGpAfVShpbvlFH3MDAA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+  <body class="overflow-hidden"> 
+    <!-- Music -->
+    <audio src="assets/music/wedding2.mp3" loop class="music"></audio>
+    <!-- Sfx Door -->
+    <audio src="assets/music/door.mp3" class="sound-door"></audio>
+
+    <!-- Door Section -->
+    <div id="door-section" class="open" onclick="mulai()">
+      <!-- <h1 class="heading-door left">Ahmad</h1>
+      <h1 class="heading-door right">Salsabila</h1> -->
+      <div class="doors">
+        <div class="door left">
+          <img src="assets/img/door-left.png" alt="left door">
+        </div>
+        <div class="door right">
+          <img src="assets/img/door-right.png" alt="right door">
+        </div>
+      </div>
+    </div>
+
+<div id="content-section">
+  <!-- navbar -->
+  <ul class="nav">
+    
+
+    <!-- Acara -->
+    <li>
+      <a href="#acara-section">
+        <i class="fas fa-fw fa-calendar-day"></i>
+        <span class="icon-label">Acara</span>
+      </a>
+    </li>
+
+    <!-- Lokasi -->
+    <li>
+      <a href="#lokasi-section">
+        <i class="fas fa-fw fa-location-dot"></i>
+        <span class="icon-label">Lokasi</span>
+      </a>
+    </li>
+
+    <!-- Love Story -->
+    <li>
+      <a href="#love-story-section">
+        <i class="fas fa-fw fa-heart"></i>
+        <span class="icon-label">Story</span>
+      </a>
+    </li>
+
+
+
+    <!-- Gallery -->
+    <!-- <li>
+      <a href="#gallery-section">
+        <i class="fas fa-fw fa-image"></i>
+        <span class="icon-label">Galeri</span>
+      </a>
+    </li> -->
+
+
+
+
+    <!-- Gift -->
+    <li>
+      <a href="#gift-section">
+        <i class="fas fa-fw fa-gift"></i>
+        <span class="icon-label">Hadiah</span>
+      </a>
+    </li>
+
+    
+    <!-- RSVP -->
+    <li>
+      <a href="#rsvp-section">
+        <i class="fas fa-fw fa-check-to-slot"></i>
+        <span class="icon-label">Rsvp</span>
+      </a>
+    </li>
+
+    <!-- adab -->
+<li>
+  <a href="#adab-section">
+    <i class="fas fa-fw fa-book-open"></i>
+    <span class="icon-label">Adab</span>
+  </a>
+</li>
+
+        <!-- Tombol Musik -->
+    <li>
+     <a href="#" id="music-button" onclick="toggleMusic(event)">
+  <i id="music-icon" class="fas fa-fw fa-compact-disc rotate"></i>
+  <span class="icon-label">Music</span>
+</a>
+
+    </li>
+  </ul>
+</div>
+<!-- Hero Section -->
+<section id="hero-section" class="d-flex align-items-center">
+  <div class="hero-window">
+    <div class="container text-center hero-content">
+      <h4 class="my-2 text-dark fw-bold huruf-sambung">Walimatul Ursy</h4>
+<h1 class="my-2 text-dark huruf-sambung nama-mempelai0">
+  <span>Ahmad</span>
+  <span>&</span>
+  <span>Salsabila</span>
+</h1>
+
+      <h4 class="my-2 text-dark">Save The Date</h4>
+
+      <div id="countdown-wedding" class="my-3">
+  <div class="countdown-box">
+    <h5>154</h5><small>Hari</small>
+  </div>
+  <div class="countdown-box">
+    <h5>14</h5><small>Jam</small>
+  </div>
+  <div class="countdown-box">
+    <h5>54</h5><small>Menit</small>
+  </div>
+  <div class="countdown-box">
+    <h5>7</h5><small>Detik</small>
+  </div>
+</div>
+
+
+<h4 class="my-2 text-dark fw-bold dear-text">Dear:</h4>
+<h4 class="my-2 text-dark nama-sambutan"><span id="nama-sambutan"></span></h4>
+
+      <a href="#pembuka-section" class="btn-get-started">
+        <i class="fas fa-fw fa-envelope-open-text"></i> Buka Undangan
+      </a>
+    </div>
+  </div>
+  
+</section>
+
+
+<!-- Section Pembuka -->
+ <section id="pembuka-section" class="pembuka-section section-bg py-5">
+   <!-- dekorasi bunga -->
+  <div class="flower flower-top-left" data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="1500">
+    <img src="assets/img/flower.png" alt="bunga" />
+  </div>
+  <div class="flower flower-bottom-right" data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="1500">
+    <img src="assets/img/flower.png" alt="bunga" />
+  </div>
+
+  <div class="container" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="section-title text-center pentagon-bg">
+          
+  <h1 class="text-dark huruf-sambung fw-bold"> Assalamu'alaikum</h1>
+  <img class="basmalah" src="assets/img/basmalah.png" alt="">
+  <p class="text-dark qs fw-bold">
+    Di antara tanda-tanda (kebesaran)-Nya ialah bahwa Dia menciptakan pasangan-pasangan untukmu dari (jenis) dirimu sendiri agar kamu merasa tenteram kepadanya. Dia menjadikan di antaramu rasa cinta dan kasih sayang.
+  </p>
+  <p class="qs">(QS. An-Nisa' (4): 1)</p><br>
+</div>
+
+        <div class="row my-4 justify-content-center ">
+          <div class="col-lg-8 text-center " data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
+            <img src="assets/img/2mempelai.png" alt="wedding" class="img-fluid">
+          </div>
+        </div>
+        
+        <div class="pentagon-bg2">
+          <div class="" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1500" >
+        <div class="p-2 pt-3 text-center">
+          <h1 class="text-center nama-mempelai2 " >Ahmad Faujan</h1>
+          <div class="info-orangtua">
+           <p class="label-orangtua">Putra pertama dari pasangan:</p>
+           <p class="nama-orangtua">Bapak H. Muhammad Idris & Ibu Hj. Nur Aini</p>
+           </div>
+      </div>
+  </div>
+
+          <div class="col-sm-1 my-auto" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+            <h1 class="text-center dan">&</h1>
+          </div>
+          <h1 class="text-center nama-mempelai2 " data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500" >Salsabila Zahra</h1>
+          <div class="info-orangtua">
+           <p class="label-orangtua">Putri pertama dari pasangan:</p>
+           <p class="nama-orangtua">Bapak H. Abdul Karim & Ibu Hj. Fatimah</p>
+           </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Acara Section -->
+<section id="acara-section" class="acara-section py-5">
+
+  <div class="container" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
+      <div class="outlineflower" data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="1500">
+        <img src="assets/img/outlineflower.png" alt="">
+    
+  </div>
+    <div class="row justify-content-center">
+      <div class="col-lg-8 acara-content-wrapper py-4 px-3 rounded">
+        <div class="section-title">
+          <h1 class="fw-bold acara">Save The Date</h1>
+          <p>
+            Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i berkenan hadir untuk memberikan do'a restunya, kami ucapkan terima kasih.
+          </p>
+        </div>
+
+        <div class="row justify-content-between px-3 text-center">
+          <!-- Akad Nikah -->
+          <div class="col-lg-6 border my-2 rounded p-3 card-acara" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1500">
+            <h4 class="fw-bold">Akad Nikah</h4>
+            <hr>
+            <p><i class="fas fa-fw fa-calendar-day"></i> Sabtu, 5 Oktober 2024</p>
+            <p><i class="fas fa-fw fa-clock"></i> 09:00 WIB - 12:00 WIB</p>
+            <p><i class="fas fa-fw fa-location-dot"></i> Lokasi di Jakarta</p>
+            <a href="https://www.google.com/calendar/render?action=TEMPLATE&text=Akad+Nikah&details=Akad+Nikah+Ahmad+dan+Salsabila&location=Salah+satu+hotel+di+Jakarta&dates=20241005T020000Z%2F20241005T050000Z" 
+               class="btn btn-lg btn-pink rounded-pill" target="_blank">
+              <i class="fas fa-fw fa-calendar-day"></i> Simpan ke Kalender
+            </a>
+          </div>
+
+          <!-- Resepsi -->
+          <div class="col-lg-6 border my-2 rounded p-3 card-acara" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="1500">
+            <h4 class="fw-bold">Resepsi</h4>
+            <hr>
+            <p><i class="fas fa-fw fa-calendar-day"></i> Ahad, 7 Oktober 2024</p>
+            <p><i class="fas fa-fw fa-clock"></i> 16:00 WIB - 17:00 WIB</p>
+            <p><i class="fas fa-fw fa-location-dot"></i> Lokasi di Jakarta</p>
+            <a href="https://www.google.com/calendar/render?action=TEMPLATE&text=Resepsi+Nikah&details=Resepsi+Nikah+Ahmad+dan+Salsabila&location=Salah+satu+hotel+di+Jakarta&dates=20241006T020000Z%2F20241006T050000Z" 
+               class="btn btn-lg btn-pink rounded-pill" target="_blank">
+              <i class="fas fa-fw fa-calendar-day"></i> Simpan ke Kalender
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Lokasi Section -->
+<section id="lokasi-section" class="lokasi-section py-5 section-bg">
+  <div class="container" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="section-title">
+          <h1 class="text-dark  fw-bold tLokasi">Lokasi</h1>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-12 text-center">
+            <a href="https://maps.app.goo.gl/nvtD2Mz8yAJBFotu8" target="_blank" class="btn btn-lg btn-pink rounded-pill mb-4">
+              <i class="fas fa-fw fa-location-dot"></i> Buka di Google Maps
+            </a>
+            <iframe 
+              class="mb-4 mb-lg-0 border-pink"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15866.711766702438!2d106.82892634006731!3d-6.173450190437329!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f5cc097e35db%3A0x73026729335a095b!2sHotel%20Borobudur%20Jakarta!5e0!3m2!1sid!2sid!4v1727064154307!5m2!1sid!2sid" 
+              width="100%" 
+              height="450"
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Love Story Section -->
+  <section id="love-story-section" class="love-story-section py-5">
+    <div class="container" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
+      <div class="section-title">
+        <h1 class="text-dark fw-bold tlove">Our Love Story</h1>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg">
+          <ul class="timeline">
+            <ul class="timeline">
+    <li data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
+      <div class="timeline-badge" style="background-image:url('assets/img/timeline/timeline-1.jpg');">
+      </div>
+      <div class="timeline-panel">
+        <div class="timeline-heading">
+          <h3 class="timeline-title">Perkenalan Lewat Perantara</h3>
+          <span class="timeline-date">Januari 2023</span>
+        </div>
+        <div class="timeline-body">
+          <p>
+            Ahmad dan Salsabila pertama kali saling mengenal melalui perantara seorang ustadz yang dipercaya. 
+            Dengan niat yang tulus mencari pasangan hidup, biodata keduanya saling dipertukarkan tanpa ada interaksi langsung.
+          </p>
+        </div>
+      </div>
+    </li>
+  
+
+    <li data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
+      <div class="timeline-badge" style="background-image:url('assets/img/timeline/timeline-3.jpg');">
+      </div>
+      <div class="timeline-panel">
+        <div class="timeline-heading">
+          <h3 class="timeline-title">Khitbah</h3>
+          <span class="timeline-date">Maret 2023</span>
+        </div>
+        <div class="timeline-body">
+          <p>
+            Dengan izin Allah, Ahmad bersama keluarganya datang melamar Salsabila secara resmi. 
+            Lamaran diterima dengan penuh suka cita, menjadi tanda dimulainya ikatan yang lebih kuat menuju pernikahan.
+          </p>
+        </div>
+      </div>
+    </li>
+
+
+
+    <li data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
+      <div class="timeline-badge" style="background-image:url('assets/img/timeline/timeline-5.jpg');">
+      </div>
+      <div class="timeline-panel">
+        <div class="timeline-heading">
+          <h3 class="timeline-title">Akad Nikah</h3>
+          <span class="timeline-date">5 Oktober 2023</span>
+        </div>
+        <div class="timeline-body">
+          <p>
+            Dengan lafaz akad yang sederhana namun penuh makna, Ahmad resmi menikahi Salsabila. 
+            Doa dari keluarga dan kerabat mengiringi momen sakral ini, menjadikan keduanya suami istri yang sah di hadapan Allah.
+          </p>
+        </div>
+      </div>
+    </li>
+
+    <li class="timeline-inverted" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
+      <div class="timeline-badge" style="background-image:url('assets/img/timeline/timeline-6.jpg');">
+      </div>
+      <div class="timeline-panel">
+        <div class="timeline-heading">
+          <h3 class="timeline-title">Walimatul ‘Ursy</h3>
+          <span class="timeline-date">6 Oktober 2023</span>
+        </div>
+        <div class="timeline-body">
+          <p>
+            Keesokan harinya, walimah pernikahan digelar sebagai wujud syukur atas nikmat Allah. 
+            Para tamu hadir memberikan doa dan restu, menjadikan suasana penuh kebahagiaan dan keberkahan.
+          </p>
+        </div>
+      </div>
+    </li>
+  </ul>       
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Gallery Section -->
+<!-- <section id="gallery-section" class="gallery-section py-5 section-bg">
+  <div class="container" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
+    <div class="section-title">
+      <h1 class="huruf-sambung text-pink fw-bold">Gallery</h1>
+    </div>
+    <div class="row" data-masonry='{"percentPosition": true }'>
+      <div class="col-sm-6 col-lg-4 mb-4">
+        <a href="assets/img/gallery/1.jpeg" data-lightbox="YunusRiska" class="text-decoration-none">
+          <img src="assets/img/gallery/1.jpeg" alt="Ahmad & Salsabila" class="card-img border-pink">
+        </a>
+      </div>
+      <div class="col-sm-6 col-lg-4 mb-4">
+        <a href="assets/img/gallery/1.jpeg" data-lightbox="YunusRiska" class="text-decoration-none">
+          <img src="assets/img/gallery/1.jpeg" alt="Ahmad & Salsabila" class="card-img border-pink">
+        </a>
+      </div>
+      <div class="col-sm-6 col-lg-4 mb-4">
+        <a href="assets/img/gallery/1.jpeg" data-lightbox="YunusRiska" class="text-decoration-none">
+          <img src="assets/img/gallery/1.jpeg" alt="Ahmad & Salsabila" class="card-img border-pink">
+        </a>
+      </div>
+    
+    </div>
+
+    <div class="row justify-content-center">
+<div class="col-12 text-center">
+<iframe class="border-pink" width="100%" height="500" src="https://www.youtube.com/embed/aaWrLldCkJI? si=FdRWkTWJUfWWA090" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="
+strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+</div>
+  </div>
+</section> -->
+
+<!-- Section Gift -->
+<section id="gift-section" class="gift-section py-5">
+  <div class="container" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500"></div>
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="section-title">
+          <h1 class=" text-pink fw-bold gift2 ">Wedding Gift</h1>
+          <p>Bagi Bapak/Ibu/Saudara/i yang ingin <br>mengirimkan hadiah pernikahan dapat <br>melalui virtual account atau
+            e-wallet <br>di bawah ini.</p>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-6 text-center">
+            <button type="button" class="text-center btn btn-lg btn-pink mb-4 rounded-pill" data-bs-toggle="collapse"
+              data-bs-target="#collapseHadiah"><i class="fas fa-fw fa-gift"></i> Kirim Hadiah</button>
+            <div class="collapse" id="collapseHadiah">
+              <div class="my-4 mx-auto position-relative credit-card">
+                <img src="assets/img/card/logo-bni.png" alt="Logo BNI" class="card-logo">
+                <div class="card-container">
+                  <img src="assets/img/card/sim.png" alt="sim" class="card-sim">
+                  <div class="card-number">1489 9692 713</div>
+                </div>
+                <div class="card-name mt-2">Ahmad Faujan</div>
+                <a style="cursor: pointer;" onclick="copyText(this)" class="copy-button btn btn-light mt-3">
+                  <i class="fas fa-fw fa-copy"></i>
+                  Copy
+                </a>
+              </div>
+
+              <div class="my-4 mx-auto position-relative credit-card">
+                <img src="assets/img/card/logo-dana.png" alt="Logo DANA" class="card-logo">
+                <div class="card-container">
+                  <img src="assets/img/card/sim.png" alt="sim" class="card-sim">
+                  <div class="card-number">0852 4241 0880</div>
+                </div>
+                <div class="card-name mt-2">Ahmad Faujan</div>
+                <a style="cursor: pointer;" onclick="copyText(this)" class="copy-button btn btn-light mt-3">
+                  <i class="fas fa-fw fa-copy"></i>
+                  Copy
+                </a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="adab-section" class="py-5">
+  <div class="container">
+    <div class="section-title text-center">
+      <h1 class="fw-bold text-dark gift2">Adab Tamu</h1>
+      <p class="mt-3">
+        Demi kelancaran acara dan kenyamanan bersama, kami berharap para tamu undangan berkenan untuk menjaga adab berikut:
+      </p>
+    </div>
+
+    <div class="row justify-content-center" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
+      <div class="col-lg-8">
+        <div class="adab-card p-4 rounded">
+
+          <!-- List adab -->
+          <div class="adab-item d-flex align-items-start mb-3">
+            <i class="fas fa-tshirt fa-lg text-pink me-3"></i>
+            <div>
+              <h6 class="mb-1">Berpakaian Sopan</h6>
+              <p class="small mb-0">Diharapkan mengenakan pakaian yang rapi.</p>
+            </div>
+          </div>
+
+          <div class="adab-item d-flex align-items-start mb-3">
+            <i class="fas fa-mobile-alt fa-lg text-pink me-3"></i>
+            <div>
+              <h6 class="mb-1">Menjaga Ketertiban</h6>
+              <p class="small mb-0">Mohon menjaga ketenangan, tidak berisik, dan tidak membuat kegaduhan.</p>
+            </div>
+          </div>
+
+          <div class="adab-item d-flex align-items-start mb-3">
+            <i class="fas fa-camera fa-lg text-pink me-3"></i>
+            <div>
+              <h6 class="mb-1">Izin Dokumentasi</h6>
+              <p class="small mb-0">Dilarang mengambil gambar tanpa izin.</p>
+            </div>
+          </div>
+
+          <hr class="my-4">
+
+          <!-- Doa -->
+          <div class="doa-card">
+            <div class="d-flex align-items-start">
+              <i class="fas fa-heart fa-lg text-pink me-3"></i>
+              <div>
+                <h6 class="mb-1">Mendoakan Pengantin</h6>
+                <p class="small mb-2">Doa tulus dari Bapak/Ibu/Saudara/i merupakan hadiah terbaik bagi kedua mempelai.</p>
+              </div>
+            </div>
+
+            <!-- Tombol toggle doa -->
+            <button class="btn btn-pink btn-sm mt-2" onclick="toggleDoa(this)">
+              <i class="fas fa-book-open"></i> Lihat Doa
+            </button>
+
+            <!-- Doa disembunyikan -->
+            <div class="doa-content mt-3" style="display: none;">
+              <blockquote class="doa-arabic">
+                بَارَكَ اللّٰهُ لَكَ، وَبَارَكَ عَلَيْكَ، وَجَمَعَ بَيْنَكُمَا فِي خَيْرٍ
+              </blockquote>
+              <p class="doa-latin">
+                Bārakallāhu laka, wa bāraka ‘alaika, wa jama‘a bainakumā fī khair.
+              </p>
+              <p class="doa-translate">
+                “Semoga Allah memberkahimu di waktu bahagia dan memberkahimu di waktu susah, serta mengumpulkan kalian berdua dalam kebaikan.”
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<!-- Section RSVP -->
+
+<section id="rsvp-section" class="rsvp-section section-bg py-5">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="section-title text-center">
+          <h1 class="text-pink huruf-sambung fw-bold">RSVP</h1>
+          <p>Isi form di bawah ini untuk melakukan konfirmasi kehadiran Anda.</p>
+        </div>
+        <form action="https://script.google.com/macros/s/AKfycbzj1818MXFK8A3Wro29kuwK7YPQJ6C0-SnKtJJwolquZcI2RYxx8w_E0COSOUXsg2zP/exec" method="POST" id="rsvp-form" class="row row-cols-md-auto g-3 align-items-center justify-content-center">
+          <div class="col-12">
+            <div class="mb-3">
+              <label for="nama">Nama</label>
+              <input type="text" id="nama" name="nama" class="form-control" required>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="mb-3">
+              <label for="jumlah">Jumlah</label>
+              <input type="number" id="jumlah" name="jumlah" class="form-control" required min="1" max="5" value="1">
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="mb-3">
+              <label for="status">Status</label>
+              <select name="status" id="status" class="form-select" required>
+                <option value="0">Pilih salah satu</option>
+                <option value="Hadir">Hadir</option>
+                <option value="Tidak Hadir">Tidak Hadir</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-12 mt-3">
+            <div class="mt-3">
+              <button type="submit" class="btn btn-kirim">
+                <i class="fas fa-fw fa-paper-plane"></i> Kirim
+              </button>
+            </div>
+          </div>
+        </form>
+        <div class="row mt-5">
+          <div class="col-lg-12">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Section Komentar -->
+<section id="comment-section" class="comment-section section-bg py-5">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="section-title text-center">
+          <h1 class="text-pink huruf-sambung fw-bold">Komentar</h1>
+          <p>Tinggalkan pesan atau ucapan untuk pengantin.</p>
+        </div>
+
+        <!-- Form Komentar -->
+        <form id="comment-form" class="row g-3">
+          <div class="col-12">
+            <div class="mb-3">
+              <label for="namaKomentar">Nama</label>
+              <input type="text" id="namaKomentar" name="nama" class="form-control" required>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="mb-3">
+              <label for="pesanKomentar">Komentar</label>
+              <textarea id="pesanKomentar" name="pesan" class="form-control" rows="3" required></textarea>
+            </div>
+          </div>
+          <div class="col-12">
+            <button type="submit" class="btn btn-kirim">
+              <i class="fas fa-fw fa-comment"></i> Kirim Komentar
+            </button>
+          </div>
+        </form>
+
+        <!-- List Komentar -->
+        <div id="comment-list" class="mt-4">
+          <h5 class="fw-bold">Ucapan Tamu:</h5>
+          <ul class="list-group" id="comments-container"></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- Penutup Section -->
+<section id="penutup-section" class="penutup-section py-5">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="section-title text-center">
+          <h1 class="text-pink huruf-sambung fw-bold">Wassalamu'alaikum</h1>
+          <p>Merupakan suatu kebahagiaan dan kehormatan bagi kami, apabila Bapak/Ibu/Saudara/i, berkenan hadir dan
+            memberikan do'a restu kepada kami.</p>
+          <h5 class="my-3">KAMI YANG BERBAHAGIA</h5>
+          <h1 class="huruf-sambung">Ahmad & Salsabila</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- footer -->
+<footer id="footer" class="mb-5 pb-5">
+  <div class="container py-5 text-center position-relative">
+    <div class="row">
+      <div class="col-12 my-3">
+        <a href="https://youtube.com/hauscoding" target="_blank" class="text-decoration-none text-pink fw-bold">
+          &copy; 2025. Made with by FdiDital
+        </a>
+      </div>
+      <div class="col-12 my-3">
+        <a href="#" class="text-pink">
+          <i class="fas fa-fw fa-arrow-up"></i> Back to top
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    <!-- Libs -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.5/js/lightbox.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.22.5/dist/sweetalert2.all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" async></script>
+    
+    <!-- Custom JS -->
+    <script src="assets/js/script.js"></script>
+    <script id="dsq-count-scr" src="//fdigital.disqus.com/count.js" async></script>
+  
+  <script>
+  const commentForm = document.getElementById("comment-form");
+  const commentsContainer = document.getElementById("comments-container");
+
+  const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzib-V_JMvwo-L6ia1DwNR4GUvSIo23PzlT8meeeVOEU2_GQ2KeQmCsABk3uklC6F0L/exec";
+
+  // Load komentar saat halaman dibuka
+  async function loadComments() {
+    try {
+      const res = await fetch(SCRIPT_URL);
+      const data = await res.json();
+      commentsContainer.innerHTML = "";
+      data.reverse().forEach(item => {
+        const li = document.createElement("li");
+        li.classList.add("list-group-item");
+        li.innerHTML = `<strong>${item.nama}</strong>: ${item.pesan}`;
+        commentsContainer.appendChild(li);
+      });
+    } catch (err) {
+      console.error("Gagal load komentar:", err);
+    }
+  }
+
+  // Submit komentar baru
+  commentForm.addEventListener("submit", async function(e) {
+    e.preventDefault();
+
+    const formData = new FormData(commentForm);
+
+    try {
+      await fetch(SCRIPT_URL, {
+        method: "POST",
+        body: formData
+      });
+      commentForm.reset();
+      loadComments(); // refresh daftar komentar
+    } catch (err) {
+      console.error("Gagal kirim komentar:", err);
+    }
+  });
+
+  // Panggil pertama kali
+  loadComments();
+</script>
+
+  </body>
+</html>

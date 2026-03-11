@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body class="bg-main">
+  
   <!-- Navbar -->
   <nav class="navbar-custom flex justify-between items-center p-4 sticky top-0 z-50">
     <img src="images/logo.png" alt="FDigital Logo" class="h-10" />
@@ -24,7 +25,6 @@
       <li><a href="harga.html">Harga</a></li>
       <li><a href="testimoni.html">Testimoni</a></li>
     </ul>
-    <a href="#" class="btn-primary hidden md:inline-block">Daftar Gratis</a>
   </nav>
   <!-- Mobile Menu (Dropdown, tidak menutupi seluruh halaman) -->
   <div id="mobile-menu" class="fixed top-16 right-4 w-56 bg-white rounded-xl shadow-lg z-50 flex-col items-start gap-4 py-4 px-6 transition-all duration-300 opacity-0 pointer-events-none scale-95 md:hidden">
@@ -39,80 +39,65 @@
   </div>
 
   <!-- Konten utama -->
-  <main class="mt-16 mx-auto max-w-screen-xl px-4 md:px-8 py-8 md:py-12">
+  <main class="mt-1 mx-auto max-w-screen-xl px-4 md:px-8 py-8 md:py-12">
     <!-- Hero -->
     <section class="flex flex-col lg:flex-row items-center lg:items-start text-left gap-8 lg:gap-16 mb-12">
       <!-- Konten kiri -->
       <div class="w-full lg:w-1/2 max-w-xl fade-in">
-        <span class="hero-badge block mb-2">Platform Undangan Digital #1 di Indonesia</span>
-        <h1 class="hero-title text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mt-4 text-left leading-tight">
-          Buat Undangan Digital Impian <br/> dalam <span>Hitungan Menit</span>
-        </h1>
+        <span class="hero-badge ">Platform Undangan Syar'i </span>
+        <h1 class="hero-title text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mt-1 text-left leading-tight">
+          Buat Undangan <br>Digitalmu Sekarang !!  </h1>
         <p class="mt-4 text-base md:text-lg text-left custom-highlight">
           Hemat waktu, biaya, dan lebih ramah lingkungan.
         </p>
-        <div class="mt-6 flex flex-col sm:flex-row gap-4">
-          <a href="template.html" class="btn-outline">Coba Sekarang Gratis</a>
-          <a href="#" class="btn-primary">Lihat Demo</a>
-        </div>
-      </div>
-      <!-- Carousel kanan -->
-      <div class="w-full lg:w-1/2 flex justify-center fade-in">
-        <div id="carousel" class="relative overflow-hidden rounded-2xl shadow-lg w-full max-w-[480px] aspect-[16/9] bg-gray-100">
-          <div id="carousel-track" class="flex transition-transform duration-700 ease-in-out w-full h-full">
-            <img src="images/Carousel1.jpg" alt="Carousel 1" class="w-full h-full object-cover flex-shrink-0" />
-            <img src="images/Carousel2.jpg" alt="Carousel 2" class="w-full h-full object-cover flex-shrink-0" />
-            <img src="images/Carousel3.jpg" alt="Carousel 3" class="w-full h-full object-cover flex-shrink-0" />
-            <img src="images/Carousel4.jpg" alt="Carousel 4" class="w-full h-full object-cover flex-shrink-0" />
-          </div>
-          <!-- Carousel dots -->
-          <div class="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2 z-10">
-            <button class="carousel-dot w-3 h-3 rounded-full bg-white opacity-70" data-index="0"></button>
-            <button class="carousel-dot w-3 h-3 rounded-full bg-white opacity-50" data-index="1"></button>
-            <button class="carousel-dot w-3 h-3 rounded-full bg-white opacity-50" data-index="2"></button>
-            <button class="carousel-dot w-3 h-3 rounded-full bg-white opacity-50" data-index="3"></button>
-          </div>
-        </div>
-      </div>
-    </section>
-    
-    <!-- Template Undangan -->
-    <section class="mb-12 fade-in">
-      <h2 class="text-2xl md:text-3xl font-bold mb-6">Template Undangan (Mobile View)</h2>
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-8 justify-center">
-        <!-- Template Card 1 -->
-        <div class="flex flex-col items-center">
-  <div class="template-frame group">
-    <img src="images/Carousel1.jpg" alt="Template 1" class="w-full h-full object-cover" />
-    <div class="template-overlay">
-      <a href="template1.html" class="btn-preview">Preview</a>
-    </div>
-  </div>
-  <button class="btn-primary mt-2 md:mt-4">Gunakan Template</button>
+        <div class="mt-6 flex flex-col sm:flex-row gap-4 items-start">
+  <!-- Tombol Buat Sekarang -->
+  <a href="template.html" class="btn-primary inline-flex items-center px-6 py-2 rounded-full font-semibold text-white shadow-md hover:scale-105 transition">
+    Buat Sekarang
+  </a>
+
+  <!-- Tombol Konsultasi WA -->
+  <a href="https://wa.me/6285242046108" target="" class="inline-flex items-center gap-2 px-4 py-2 rounded-full font-semibold text-emerald-700 border border-emerald-600 hover:bg-emerald-600 hover:text-white transition">
+    <img src="images/wa-logo.png" alt="WhatsApp" class="w-5 h-5" />
+    Chat Admin aja
+  </a>
 </div>
 
-        <!-- Template Card 2 -->
-        <div class="flex flex-col items-center">
-          <div class="template-frame group">
-            <img src="images/template2.jpg" alt="Template 2" class="w-full h-full object-cover" />
-            <div class="template-overlay">
-              <button class="btn-preview">Preview</button>
-            </div>
-          </div>
-          <button class="btn-primary mt-2 md:mt-4">Gunakan Template</button>
-        </div>
-        <!-- Template Card 3 -->
-        <div class="flex flex-col items-center">
-          <div class="template-frame group">
-            <img src="images/template3.jpg" alt="Template 3" class="w-full h-full object-cover" />
-            <div class="template-overlay">
-              <button class="btn-preview">Preview</button>
-            </div>
-          </div>
-          <button class="btn-primary mt-2 md:mt-4">Gunakan Template</button>
-        </div>
       </div>
+      <!-- Carousel kanan -->
+  <div class="hero-image">
+    <img src="images/Temp-hp.png" alt="">
+  </div>
     </section>
+    
+<section class="template-section" aria-label="Template Undangan Mobile View">
+  <h2>Template Undangan (Mobile View)</h2>
+  <div class="template-scroll-wrapper" id="templateScrollWrapper">
+    <div class="template-list" id="templateList" role="list">
+      <!-- Template Items -->
+      <article class="template-item" role="listitem" tabindex="0" aria-label="Template Nisa & Rizal">
+        <img src="images/backround1.png" alt="Template Nisa & Rizal" />
+        <a href="template1.html" class="btn-preview" aria-label="Preview Template Nisa & Rizal">Preview</a>
+
+      </article>
+      <article class="template-item" role="listitem" tabindex="0" aria-label="Template Ahmad & Shalabila">
+        <img src="images/backround2.jpg" alt="Template Ahmad & Shalabila" />
+        <button class="btn-preview" data-template="mobile2">Preview</button>
+      </article>
+      <article class="template-item" role="listitem" tabindex="0" aria-label="Template Digital Impian">
+        <img src="images/backround3.jpg" alt="Template Digital Impian" />
+        <button class="btn-preview" data-template="mobile3">Preview</button>
+      </article>
+      <article class="template-item" role="listitem" tabindex="0" aria-label="Template Tambahan">
+        <img src="images/backround4.jpg" alt="Template Tambahan" />
+        <button class="btn-preview" data-template="mobile4">Preview</button>
+      </article>
+      <!-- Tambahan template lainnya... -->
+    </div>
+  </div>
+  <button class="read-more" id="btnLihatSelengkapnya" aria-label="Lihat Selengkapnya">Lihat Selengkapnya &raquo;</button>
+</section>
+
   </main>
 
   <!-- Script -->
@@ -137,8 +122,8 @@ if (closeMenu && mobileMenu) {
 }
   </script>
 
-  <footer class="bg-gray-100 py-6 text-center text-sm text-gray-600">
-  <p>&copy; 2025 FDigital.me – Undangan Digital Islami & Modern</p>
+  <footer class="bg-gray-100 py-2 text-center text-sm text-gray-600">
+  <p>&copy; 2025 FDigital.me</p>
   <p>Made with ❤️ in Gorontalo</p>
 </footer>
 
